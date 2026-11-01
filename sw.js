@@ -1,6 +1,6 @@
 // Keeps the game playable offline. The version changes whenever a file changes.
 // Games share one github.io origin, so this only ever removes its own old caches.
-const CACHE = "gearworks-9a0870f51e80";
+const CACHE = "gearworks-4c4aa8d23cbd";
 const FILES = ["./","index.html","manifest.webmanifest","icons/icon-192.png","icons/icon-512.png","src/gamekit.js","src/logic.js","src/main.js"];
 self.addEventListener("install", (e) => e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES)).then(() => self.skipWaiting())));
 self.addEventListener("activate", (e) => e.waitUntil(caches.keys().then((keys) => Promise.all(keys.filter((k) => k.startsWith("gearworks-") && k !== CACHE).map((k) => caches.delete(k)))).then(() => self.clients.claim())));
