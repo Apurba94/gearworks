@@ -1,0 +1,11 @@
+{
+  "name": "gearworks",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "Lay belts, sorters and presses on a factory floor so that the right parts reach the right crates.",
+  "scripts": {
+    "test": "node --test"
+  }
+}

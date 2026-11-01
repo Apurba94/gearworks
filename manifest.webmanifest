@@ -1,0 +1,25 @@
+{
+  "name": "Gearworks",
+  "short_name": "Gearworks",
+  "description": "Lay belts, sorters and presses on a factory floor so that the right parts reach the right crates.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "background_color": "#05070d",
+  "theme_color": "#374151",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
